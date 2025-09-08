@@ -1,32 +1,31 @@
-//
-//  corepassApp.swift
-//  corepass
-//
-//  Created by Hari Shankar on 9/4/25.
-//
-
 import SwiftUI
-import SwiftData
 
 @main
-struct corepassApp: App {
-    var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
+struct CorePassApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    @StateObject private var auth = AuthViewModel()
 
-        do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
-        } catch {
-            fatalError("Could not create ModelContainer: \(error)")
+    init() {
+        #if DEBUG
+        let env = ProcessInfo.processInfo.environment
+        if let testUID = env["TEST_UID"], !testUID.isEmpty {
+            Services.session = MockSession(uid: testUID)          // UI tests
+        } else if env["XCODE_RUNNING_FOR_PREVIEWS"] != nil {
+            Services.session = MockSession()                      // Previews
+        } else {
+            Services.session = FirebaseSession()                  // Real app
         }
-    }()
+        #else
+        Services.session = FirebaseSession()
+        #endif
+    }
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Group {
+                if auth.user == nil { LoginView() } else { RootTabView() }
+            }
+            .environmentObject(auth)
         }
-        .modelContainer(sharedModelContainer)
     }
 }
