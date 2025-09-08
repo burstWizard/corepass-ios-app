@@ -118,6 +118,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4EB439E82E6E7DCD00E7980F /* readme-resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "readme-resources";
+			sourceTree = "<group>";
+		};
 		4EE746B02E69DFF500D6C879 = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +133,7 @@
 				4EE746D82E69DFFD00D6C879 /* corepassUITests */,
 				4EE746BA2E69DFF500D6C879 /* Products */,
 				4EB439C42E6DFCA900E7980F /* GoogleService-Info.plist */,
+				4EB439E82E6E7DCD00E7980F /* readme-resources */,
 			);
 			sourceTree = "<group>";
 		};

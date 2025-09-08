@@ -4,7 +4,6 @@ import SwiftUI
 struct ActiveCard: View {
     let pass: Pass
     var onEnd: (() -> Void)? = nil
-
     // MARK: - Derived (safe) values
     private var startedAt: Date { pass.startTime ?? .now }     // graceful fallback if data incomplete
     private var durationMinutes: Int { max(0, pass.duration ?? 0) }
@@ -118,9 +117,10 @@ extension ActiveCard {
 
     /// Pure function used by the view and unit tests.
     static func progress(startAt: Date, durationMinutes: Int, now: Date) -> Progress {
+        print(startAt)
         let total = max(0, durationMinutes) * 60
         guard total > 0 else { return Progress(fraction: 0, remainingMinutes: 0) }
-
+        
         let elapsed = max(0, Int(now.timeIntervalSince(startAt)))
         let clampedElapsed = min(elapsed, total)
         let fraction = Double(clampedElapsed) / Double(total)
