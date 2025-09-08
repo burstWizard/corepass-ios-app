@@ -19,20 +19,21 @@ Students don't sign up - admin create accounts for them. Currently only supports
 Students can view active pass (if any), requested passes, and past passes. All data is fetched from firestore database.
 
 #### Ex. Student with an Active Pass
+
 <img src="https://raw.githubusercontent.com/burstWizard/corepass-ios-app/refs/heads/main/readme-resources/with_active.PNG
-" alt="Account View" height="300"/>
+" alt="Hello" height="300"/>
 
 #### Ex. Student with a Requested Pass
-<img src="https://raw.githubusercontent.com/burstWizard/corepass-ios-app/refs/heads/main/readme-resources/with_requested.PNG" alt="Account View" height="300"/>
 
+<img src="https://raw.githubusercontent.com/burstWizard/corepass-ios-app/refs/heads/main/readme-resources/with_requested.PNG" alt="Account View" height="300"/>
 
 ### Pass Detail view
 Clicking full screen expands the active pass, which is useful for students to show hall pass monitors.
+
 <img src="https://raw.githubusercontent.com/burstWizard/corepass-ios-app/refs/heads/main/readme-resources/PassDetailView.png" alt="Account View" height="300"/>
 
-
-
 ### New Pass Screen
+
 <img src="https://raw.githubusercontent.com/burstWizard/corepass-ios-app/036d97af05023bf142defdabb7a904b1c9f500f2/readme-resources/newpass.PNG" alt="Account View" height="300"/>
 
 #### Location Picker
@@ -41,4 +42,5 @@ Locations are fetched from a Firestore database
 <img src="https://raw.githubusercontent.com/burstWizard/corepass-ios-app/036d97af05023bf142defdabb7a904b1c9f500f2/readme-resources/location_pick.PNG" alt="Account View" height="300"/>
 
 ### Account view
+
 <img src="https://raw.githubusercontent.com/burstWizard/corepass-ios-app/036d97af05023bf142defdabb7a904b1c9f500f2/readme-resources/account.PNG" alt="Account View" height="300"/>
