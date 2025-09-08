@@ -12,6 +12,7 @@ This app is written in Swift/SwiftUI, and is integrated with a Firebase Firestor
 
 ### Login Screen
 Students don't sign up - admin create accounts for them. Currently only supports sign in with Google, but we plan to support more.
+
 <img src="https://raw.githubusercontent.com/burstWizard/corepass-ios-app/036d97af05023bf142defdabb7a904b1c9f500f2/readme-resources/sign_in.PNG" alt="Account View" height="300"/>
 
 ### Dashboard
