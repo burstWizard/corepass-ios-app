@@ -4,7 +4,7 @@ Thousands of schools in the US utilize digital hall pass systems and, on average
 
 #### What is this repo?
 
-This repo stores the code for the corepass digital ios app for students. Students can safely login (with Google), create new hallpasses, check on the status of unapproved hall passes, view active passes, and view past passes.
+This repo stores the code for the corepass digital iOS app for students. Students can safely login (with Google), create new hallpasses, check on the status of unapproved hall passes, view active passes, and view past passes.
 
 This app is written in Swift/SwiftUI, and is integrated with a Firebase Firestore database.
 
