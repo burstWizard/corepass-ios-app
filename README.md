@@ -20,8 +20,7 @@ Students can view active pass (if any), requested passes, and past passes. All d
 
 #### Ex. Student with an Active Pass
 
-<img src="https://raw.githubusercontent.com/burstWizard/corepass-ios-app/refs/heads/main/readme-resources/with_active.PNG
-" alt="Hello" height="300"/>
+<img src="https://raw.githubusercontent.com/burstWizard/corepass-ios-app/refs/heads/main/readme-resources/with_active.PNG" alt="Hello" height="300"/>
 
 #### Ex. Student with a Requested Pass
 
